@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+</head>
+<body>
+
+  <ul id="todos">
+  </ul>
+
+  <script type="text/template" id="item-template">
+    <li class="todo">
+      <input id="todo_complete" type="checkbox" <%= completed ? 'checked="checked"' : '' %> />
+      <%= title %>
+    </li>
+  </script>
+  <script src="jquery-prod.js"></script>
+  <script src="underscore-prod.js"></script>
+  <script src="backbone-prod.js"></script>
+  <script src="demo.js"></script>
+</body>
+</html>

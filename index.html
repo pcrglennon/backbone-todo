@@ -8,13 +8,14 @@
 <body>
 
   <ul id="todos">
+
   </ul>
 
   <script type="text/template" id="item-template">
-    <li class="todo">
+    <div class="todo">
       <input id="todo_complete" type="checkbox" <%= completed ? 'checked="checked"' : '' %> />
       <%= title %>
-    </li>
+    </div>
   </script>
   <script src="jquery-prod.js"></script>
   <script src="underscore-prod.js"></script>

@@ -1,7 +1,9 @@
 define([
   'jquery',
   'underscore',
-  'backbone'
+  'backbone',
+  // 'text!templates/items/item.html'
+// ], function($, _, Backbone, itemTemplate) {
 ], function($, _, Backbone) {
 
   var ItemView = Backbone.View.extend({
@@ -9,7 +11,7 @@ define([
     tagName: 'li',
 
     // Cache the template function for a single item.
-    template: _.template( $('#item-template').html() ),
+    template: _.template($('#item-template').html()),
 
     // Called when the view is first created
     initialize: function() {
